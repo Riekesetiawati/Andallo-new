@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/andallo.css') }}">
     @stack('head')
 </head>
@@ -37,7 +38,7 @@
     <div class="mainbar">
         <div class="container mainbar-inner">
             <a class="brand" href="{{ route('home') }}">
-                <img src="{{ asset('images/logo.svg') }}" alt="" width="36" height="36">
+                <img src="{{ asset('images/logo.png') }}" alt="" width="40" height="40">
                 <span>andallo</span>
             </a>
             <form class="header-search" action="{{ route('services.index') }}" method="get" role="search">
@@ -89,7 +90,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div>
-            <a class="brand" href="{{ route('home') }}"><img src="{{ asset('images/logo.svg') }}" alt=""><span>andallo</span></a>
+            <a class="brand" href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""><span>andallo</span></a>
             <p>Marketplace jasa yang menghubungkan pelanggan dengan UMKM penyedia jasa lokal. Harga, jadwal, dan status pesanan tercatat di Andallo.</p>
         </div>
         <div>

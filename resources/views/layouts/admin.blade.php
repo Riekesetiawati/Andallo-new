@@ -6,12 +6,13 @@
     <title>@yield('title', 'Admin') — Andallo</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/andallo.css') }}">
 </head>
 <body>
 <div class="admin-shell">
     <aside class="admin-side">
-        <a class="brand" href="{{ route('home') }}"><img src="{{ asset('images/logo.svg') }}" alt="" width="28" height="28"><span>andallo</span></a>
+        <a class="brand" href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt="" width="32" height="32"><span>andallo</span></a>
         <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">Ringkasan</a>
         <a href="{{ route('admin.providers') }}">Verifikasi mitra</a>
         <a href="{{ route('admin.bookings') }}">Pemeriksaan pesanan</a>
